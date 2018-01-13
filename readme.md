@@ -1,11 +1,11 @@
 # インターフェース仕様書
 
-- [回答追加](Docs/answer-add.md)
-- [回答詳細？](Docs/answer-detail.md)
-- [回答取得](Docs/answer.md)
-- [アンケート取得](Docs/enquetes.md)
-- [アンケート追加](Docs/enquete-add.md)
-- [アンケート詳細取得](Docs/enquetes-detail.md)
+- [回答追加](docs/answer-add.md)
+- [回答詳細？](docs/answer-detail.md)
+- [回答取得](docs/answer.md)
+- [アンケート取得](docs/enquetes.md)
+- [アンケート追加](docs/enquete-add.md)
+- [アンケート詳細取得](docs/enquetes-detail.md)
 
 # Lumen PHP Framework
 
