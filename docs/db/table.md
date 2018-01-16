@@ -14,7 +14,7 @@
 |2|enquete_id|integer|  |FOR|1|YES|  |
 |3|item_id|integer|  | FOR |333|YES|  |
 |4|comment|string|  |  | ¿¿¿¿¿ |NO|  |
-|5|commentedby|string|  |  | waragaya |NO|  |
+|5|comment_by|string|  |  | waragaya |NO|  |
 
 # ¿¿¿¿¿¿¿¿item
 # ¿¿¿¿¿¿¿¿¿¿¿¿¿¿
