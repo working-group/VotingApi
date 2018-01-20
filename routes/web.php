@@ -13,8 +13,6 @@
 
 $router->get('/', function () use ($router) {
     return $router->app->version();
-//      $response = DB::table('enquetes')->get();
-//      return response()->json($response);
 });
 
 $router->get('/enquetes', ['uses' => 'EnqueteController@getAll', 'as' => 'enquetes']);

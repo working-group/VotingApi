@@ -18,7 +18,7 @@ class EnqueteController extends Controller
     public function getAll()
     {
         $response = DB::table('enquetes')->get();
-	$enquete['enquete'] = $response;
+        $enquete['enquete'] = $response;
         return response()->json($enquete);
     }
 
