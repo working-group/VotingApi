@@ -2,7 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use DB;
+use App\Domain\Services\EnqueteReader;
+use Symfony\Component\HttpFoundation\Response;
 
 class EnqueteController extends Controller
 {
@@ -15,11 +16,9 @@ class EnqueteController extends Controller
     {
     }
 
-    public function getAll()
+    public function getAll(EnqueteReader $reader) : Response
     {
-        $response = DB::table('enquetes')->get();
-        $enquete['enquete'] = $response;
-        return response()->json($enquete);
+        return response()->json($reader->readAll(), 200, [], JSON_UNESCAPED_UNICODE );
     }
 
     //
