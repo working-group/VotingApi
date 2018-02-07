@@ -17,5 +17,5 @@ class AnswerRepository
              'comment'      => $answer->getComment(),
              'commented_by' => $answer->getCommentedBy(),
         )];
-19   }
-21}
+    }
+}
