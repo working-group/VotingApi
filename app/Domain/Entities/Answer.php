@@ -8,6 +8,7 @@ namespace App\Domain\Entities;
 class Answer
 {
     private id;
+    private enqueteId;
     private item;
     private comment;
     private commentedBy;
@@ -15,27 +16,33 @@ class Answer
     public function __construct(array $array)
     {
         $this->id          = $array['id'];
+        $this->enqueteId   = $aaray['enqueteId'];
         $this->item        = $array['item'];
         $this->comment     = $array['comment'];
         $this->commentedBy = $array['commentedBy'];
     }
     
-    public function getId()
+    private function getId()
     {
         return $this->id;
     }
     
-    public function getItem()
+    private function getEnqueteId()
+    {
+        return $this->enqueteId;
+    }
+    
+    private function getItem()
     {
         return $this->item;
     }
     
-    public function getComment()
+    private function getComment()
     {
         return $this->comment;
     }
     
-    public function getCommentedBy()
+    private function getCommentedBy()
     {
         return $this->commentedBy;
     }
