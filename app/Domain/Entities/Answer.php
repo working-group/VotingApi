@@ -15,7 +15,6 @@ class Answer
 
     public function __construct(array $array)
     {
-        $this->id          = $array['id'];
         $this->enqueteId   = $aaray['enqueteId'];
         $this->item        = $array['item'];
         $this->comment     = $array['comment'];
@@ -25,6 +24,11 @@ class Answer
     private function getId()
     {
         return $this->id;
+    }
+    
+    private function setId($id)
+    {
+        $this->id = $id;
     }
     
     private function getEnqueteId()
