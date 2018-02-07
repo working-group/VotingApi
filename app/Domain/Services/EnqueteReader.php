@@ -35,5 +35,5 @@ class EnqueteReader
     public function readByEnqueteId(int $enqueteId)
     {
         $result = $this->repository->findByEnqueteId($enqueteId);
-        return 'xxx';
+        return 'xxxx';
 }
