@@ -31,10 +31,10 @@ class AnswerController extends Controller
     public function answer(AnswerWriter $writer, Request $request, int $enqueteId) : Response
     {
         $answerParam = [
-            'itemId'      => $request->get('item_id'),
-            'enqueteId'   => $enqueteId,
-            'comment'     => $request->get('comment'),
-            'commentedBy' => $request->get('commented_by'),
+            'itemId'    => $request->get('item_id'),
+            'enqueteId' => $enqueteId,
+            'comment'   => $request->get('comment'),
+            'commentBy' => $request->get('comment_by'),
         ];
         
         return response()->json(
