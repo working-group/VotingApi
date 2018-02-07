@@ -18,7 +18,7 @@ class AnswerController extends Controller
     {
     }
 
-    public function getByEnqueteId(int $enqueteId, AnswerReader $reader) : Response
+    public function getByEnqueteId(AnswerReader $reader, int $enqueteId) : Response
     {
         return response()->json(
             $reader->readByEnqueteId(),
