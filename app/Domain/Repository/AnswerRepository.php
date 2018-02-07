@@ -17,7 +17,7 @@ class AnswerRepository
     {
         return DB::table('answers')
           ->where('enquete_id', $enqueteId)
-          ->get($enqueteId);
+          ->get();
     }
   
     /**
