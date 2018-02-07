@@ -16,7 +16,7 @@ class Answer
     public function __construct(array $array)
     {
         $this->enqueteId   = $array['enqueteId'];
-        $this->item        = $array['item'];
+        $this->item        = $array['item_id'];
         $this->comment     = $array['comment'];
         $this->commentedBy = $array['commentedBy'];
     }
