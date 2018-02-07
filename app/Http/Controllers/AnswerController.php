@@ -28,7 +28,7 @@ class AnswerController extends Controller
         );
     }
     
-    public function answer(AnswerWriter $writer, int $enqueteId, Request $request) : Response
+    public function answer(AnswerWriter $writer, Request $request, int $enqueteId) : Response
     {
         $answerParam = [
             'itemId'      => $request->get('item_id'),
