@@ -26,10 +26,10 @@ class AnswerRepository
     public function add(Answer $answer)
     { 
         return DB::table('answers')->insertGetId([
-            'enquete_id'   => $answer->getEnqueteId(),
-            'item_id'      => $answer->getItemId(),
-            'comment'      => $answer->getComment(),
-            'commented_by' => $answer->getCommentedBy(),
+            'enquete_id' => $answer->getEnqueteId(),
+            'item_id'    => $answer->getItemId(),
+            'comment'    => $answer->getComment(),
+            'comment_by' => $answer->getCommentBy(),
         ]);
     }
 }
