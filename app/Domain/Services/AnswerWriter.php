@@ -29,7 +29,7 @@ class AnswerWriter
          $answerId = $this->repository->add($answer);
          
          return [
-             'id' => answerId,
+             'id' => $answerId,
          ];
      }
 }
