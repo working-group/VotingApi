@@ -3,13 +3,14 @@
 namespace App\Domain\Repository;
 
 use DB;
+use App\Domain\Entities\Answer;
 
 /**
  * Class AnswerRepository
  */
 class AnswerRepository
 {  
-    public function add($answer)
+    public function add(Answer $answer)
     { 
         return DB::table('answer')->insertGetId([
              'enquete_id'   => $answer->getEnqueteId(),
