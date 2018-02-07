@@ -25,7 +25,6 @@ class Answer
         return $this->id;
     }
     
-    
     public function getItem()
     {
         return $this->item;
