@@ -15,7 +15,7 @@ class AnswerRepository
      */
     public function findByEnqueteId(int $enqueteId)
     {
-        return DB::table('ansewrs')
+        return DB::table('answers')
           ->where('enquete_id', $enqueteId)
           ->get($enqueteId);
     }
