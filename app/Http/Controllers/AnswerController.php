@@ -28,12 +28,13 @@ class AnswerController extends Controller
         );
     }
     
-    public function answer(Request $request, AnswerWriter $writer) : Response
+    public function answer(int $enqueteId, Request $request, AnswerWriter $writer) : Response
     {
         $answerParam = [
-            'itemId'      => $request->get('item_id');
-            'comment'     => $request->get('comment');
-            'commentedBy' => $request->get('commented_by');
+            'itemId'      => $request->get('item_id'),
+            'enqueteId'   => $enqueteId,
+            'comment'     => $request->get('comment'),
+            'commentedBy' => $request->get('commented_by'),
         ];
         
         return respose()>json(
