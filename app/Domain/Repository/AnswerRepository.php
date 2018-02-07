@@ -31,6 +31,6 @@ class AnswerRepository
             'item_id'      => $answer->getItemId(),
             'comment'      => $answer->getComment(),
             'commented_by' => $answer->getCommentedBy(),
-        )];
+        ]);
     }
 }
