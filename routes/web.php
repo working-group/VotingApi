@@ -16,3 +16,5 @@ $router->get('/', function () use ($router) {
 });
 
 $router->get('/enquetes', ['uses' => 'EnqueteController@getAll', 'as' => 'enquetes']);
+
+$router->post('/answer/{enquete_id}', ['uses' => 'AnswerController@answer', 'as' => 'answer']);
