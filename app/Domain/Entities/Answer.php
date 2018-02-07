@@ -7,11 +7,11 @@ namespace App\Domain\Entities;
  */
 class Answer
 {
-    private id;
-    private enqueteId;
-    private item;
-    private comment;
-    private commentedBy;
+    private $id;
+    private $enqueteId;
+    private $item;
+    private $comment;
+    private $commentedBy;
 
     public function __construct(array $array)
     {
