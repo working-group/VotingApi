@@ -31,4 +31,9 @@ class EnqueteReader
         $enquetes['enquete'] = $result;
         return $enquetes;
     }
+    
+    public function readByEnqueteId(int $enqueteId)
+    {
+        $result = $this->repository->findByEnqueteId($enqueteId);
+        return 'xxx';
 }
