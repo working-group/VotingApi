@@ -37,7 +37,7 @@ class AnswerController extends Controller
             'commentedBy' => $request->get('commented_by'),
         ];
         
-        return respose()>json(
+        return response()>json(
             $writer->write($answerParam),
             200,
             [],
