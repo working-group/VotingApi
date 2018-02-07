@@ -3,7 +3,6 @@
 namespace App\Http\Controllers;
 
 use App\Domain\Services\EnqueteReader;
-use App\Domain\Services\EnqueteDetailReader;
 use Symfony\Component\HttpFoundation\Response;
 
 class EnqueteController extends Controller
@@ -22,7 +21,7 @@ class EnqueteController extends Controller
         return response()->json($reader->readAll(), 200, [], JSON_UNESCAPED_UNICODE );
     }
 
-    public function getEnqueteDetail(EnqueteDetailReader $reader, int $enqueteId) : Response
+    public function getEnqueteDetail(EnqueteReader $detailReader, int $enqueteId) : Response
     {
         return response()->json($reader->readByEnqueteId($enqueteId), 200, [], JSON_UNESCAPED_UNICODE );
     }
