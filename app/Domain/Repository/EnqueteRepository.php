@@ -18,4 +18,8 @@ class EnqueteRepository
         return DB::table('enquetes')->get();
     }
 
+    public function findByEnqueteId(int $euqueteId) : array
+    {
+        return 'xxxx';
+    }
 }
