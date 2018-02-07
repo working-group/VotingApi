@@ -15,10 +15,10 @@ class Answer
 
     public function __construct(array $array)
     {
-        $this->enqueteId   = $array['enqueteId'];
-        $this->itemId      = $array['itemId'];
-        $this->comment     = $array['comment'];
-        $this->commentedBy = $array['commentedBy'];
+        $this->enqueteId = $array['enqueteId'];
+        $this->itemId    = $array['itemId'];
+        $this->comment   = $array['comment'];
+        $this->commentBy = $array['commentBy'];
     }
     
     public function getId()
@@ -46,8 +46,8 @@ class Answer
         return $this->comment;
     }
     
-    public function getCommentedBy()
+    public function getCommentBy()
     {
-        return $this->commentedBy;
+        return $this->commentBy;
     }
 }
