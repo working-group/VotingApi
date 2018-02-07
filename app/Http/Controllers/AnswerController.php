@@ -21,7 +21,7 @@ class AnswerController extends Controller
     public function getByEnqueteId(AnswerReader $reader, int $enqueteId) : Response
     {
         return response()->json(
-            $reader->readByEnqueteId(),
+            $reader->readByEnqueteId($enqueteId),
             200,
             [],
             JSON_UNESCAPED_UNICODE
