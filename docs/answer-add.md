@@ -10,7 +10,7 @@ POST
 |---|---|---|
 |item_id|int|選択肢ID|
 |comment|string|コメント|
-|commentedby|string|回答者名|
+|commented_by|string|回答者名|
 
 ## response
 |param|type|description|
