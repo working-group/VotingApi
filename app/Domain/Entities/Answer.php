@@ -21,7 +21,7 @@ class Answer
         $this->commentedBy = $array['commentedBy'];
     }
     
-    private function getId()
+    public function getId()
     {
         return $this->id;
     }
@@ -31,22 +31,22 @@ class Answer
         $this->id = $id;
     }
     
-    private function getEnqueteId()
+    public function getEnqueteId()
     {
         return $this->enqueteId;
     }
     
-    private function getItem()
+    public function getItem()
     {
         return $this->item;
     }
     
-    private function getComment()
+    public function getComment()
     {
         return $this->comment;
     }
     
-    private function getCommentedBy()
+    public function getCommentedBy()
     {
         return $this->commentedBy;
     }
