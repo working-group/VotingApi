@@ -9,14 +9,14 @@ class Answer
 {
     private $id;
     private $enqueteId;
-    private $item;
+    private $itemId;
     private $comment;
     private $commentedBy;
 
     public function __construct(array $array)
     {
         $this->enqueteId   = $array['enqueteId'];
-        $this->item        = $array['itemId'];
+        $this->itemId      = $array['itemId'];
         $this->comment     = $array['comment'];
         $this->commentedBy = $array['commentedBy'];
     }
@@ -36,9 +36,9 @@ class Answer
         return $this->enqueteId;
     }
     
-    public function getItem()
+    public function getItemId()
     {
-        return $this->item;
+        return $this->itemId;
     }
     
     public function getComment()
