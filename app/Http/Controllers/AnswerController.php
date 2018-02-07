@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Domain\Services\AnswerReader;
 use App\Domain\Services\AnswerWriter;
 use Symfony\Component\HttpFoundation\Response;
-use Illuminate\Http\Request:;
+use Illuminate\Http\Request;
 
 class AnswerController extends Controller
 {
