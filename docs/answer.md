@@ -3,7 +3,7 @@
 GET
 
 ## path
-`/answer/:enquete_id`
+`/answers/:enquete_id`
 
 ## request
 |param|type|description|
