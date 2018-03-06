@@ -3,6 +3,7 @@
 namespace App\Domain\Repository;
 
 use DB;
+use App\Domain\Entities\Enquete;
 
 /**
  * Class EnqueteRepository
@@ -17,9 +18,14 @@ class EnqueteRepository
     {
         return DB::table('enquetes')->get();
     }
-
-    public function findByEnqueteId(int $euqueteId) : array
+    
+    /**
+     * @return stdClass
+     */
+    public function findByEnqueteId(int $euqueteId)
     {
-        return 'xxxx';
+        return DB::table('enquetes')
+            ->where ('id', $enqueteId)
+            ->get();
     }
 }
