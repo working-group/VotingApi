@@ -23,17 +23,32 @@ class EnqueteReader
     }
 
     /**
+     * アンケート一覧取得
      * @return array
      */
     public function readAll() : array
     {
         $result = $this->repository->findAll();
-        $enquetes['enquete'] = $result;
+        $enquetes['enquetes'] = $result;
         return $enquetes;
+        
     }
     
-    public function readByEnqueteId(int $enqueteId)
+    /**
+     * アンケート詳細取得
+     * @return array
+     */
+    public function readByEnqueteId(int $enqueteId) : array
     {
-        $result = $this->repository->findByEnqueteId($enqueteId);
-        return 'xxxx';
+        $result = $this->repository->
+            ->findByEnqueteId($enqueteId)
+            ->toArray();
+        
+        return [
+            'id'         => $enqueteId,
+            'title'      => $title,
+            'question'   => $question,
+            'selections' => $selections,
+        ];
+    }        
 }
