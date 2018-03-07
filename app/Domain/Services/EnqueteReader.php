@@ -44,9 +44,30 @@ class EnqueteReader
             ->findByEnqueteId($enqueteId)
             ->toArray();
         
-        dd($result[0]->title);
+        //dd($result[]);
         
-        
-    
-            }
+        return [
+            'id'            => $result[0]->id,
+            'title'         => $result[0]->title,
+            'question'      => $result[0]->question,
+            'selections'    => [
+                 [
+                    'id' => $result[0]->item_id,
+                    'discription' =>$result[0]->item_name,
+                 ],
+                 [
+                    'id' => $result[1]->item_id,
+                    'discription' =>$result[1]->item_name,
+                 ],
+                 [
+                     'id' => $result[2]->item_id,
+                    'discription' =>$result[2]->item_name,
+                 ],
+                 [
+                 'id' => $result[3]->item_id,
+                    'discription' =>$result[3]->item_name,
+                 ],
+            ],
+        ];
+   }
 }
