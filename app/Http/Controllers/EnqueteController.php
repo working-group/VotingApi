@@ -23,7 +23,8 @@ class EnqueteController extends Controller
 
     public function getEnqueteDetail(EnqueteReader $reader, int $enqueteId) : Response
     {
-        return response()->json($reader->readByEnqueteId($enqueteId), 200, [], JSON_UNESCAPED_UNICODE );
+        dd($reader->readByEnqueteId($enqueteId));
+        //return response()->json($reader->readByEnqueteId($enqueteId), 200, [], JSON_UNESCAPED_UNICODE );
     }
     
     //
