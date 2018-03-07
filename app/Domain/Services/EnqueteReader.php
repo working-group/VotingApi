@@ -40,7 +40,7 @@ class EnqueteReader
      */
     public function readByEnqueteId(int $enqueteId) : array
     {
-        $result = $this->repository->
+        $result = $this->repository
             ->findByEnqueteId($enqueteId)
             ->toArray();
         
