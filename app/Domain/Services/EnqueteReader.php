@@ -44,6 +44,9 @@ class EnqueteReader
             ->findByEnqueteId($enqueteId)
             ->toArray();
         
-        dd($result);
-    }        
+        dd($result[0]);
+        
+        
+    
+            }
 }
