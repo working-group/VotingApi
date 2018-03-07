@@ -22,7 +22,7 @@ class EnqueteRepository
     /**
      * @return stdClass
      */
-    public function findByEnqueteId(int $euqueteId)
+    public function findByEnqueteId(int $enqueteId)
     {
         return DB::table('enquetes')
             ->join('enquete_items', 'enquete_id', '=', 'enquetes.id')
