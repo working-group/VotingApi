@@ -25,6 +25,7 @@ class EnqueteRepository
     public function findByEnqueteId(int $euqueteId)
     {
         return DB::table('enquetes')
+            ->join('enquete_items', 'enquete_id', '=', 'enquetes.id')
             ->where ('id', $enqueteId)
             ->get();
     }
