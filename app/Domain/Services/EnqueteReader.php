@@ -43,9 +43,9 @@ class EnqueteReader
         $result = $this->repository
             ->findByEnqueteId($enqueteId)
             ->toArray();
-        
-        //dd($result[]);
-        
+        foreach($result as $value){
+            dd($value);
+        }
         return [
             'id'            => $result[0]->id,
             'title'         => $result[0]->title,
@@ -69,5 +69,6 @@ class EnqueteReader
                  ],
             ],
         ];
+        
    }
 }
