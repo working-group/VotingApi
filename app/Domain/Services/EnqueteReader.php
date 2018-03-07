@@ -44,6 +44,7 @@ class EnqueteReader
             ->findByEnqueteId($enqueteId)
             ->toArray();
         
+        var_dump($result);
         return [
             'id'         => $enqueteId,
             'title'      => $title,
